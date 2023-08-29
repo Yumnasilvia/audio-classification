@@ -1,26 +1,65 @@
-# audio-classification
-audio classification create and deploy model
-1. Installing
-   a. Install tensorflow
-   b. Install numpy
-   c. Install matplotlib
-   d. Install scikit-learn
-   e. Install librosa
-2. Create dataset
-   a. make dataset model and in dataset folder make folder for class
-      example :
-                -dataset 
-                   - Kanan
-                   - Kiri
-                   - Lanjutkan
-                   - Stop
-                   - Tidak
-                   - Ya
-   b. Fill class folder with audio file
-   c. Running prepare_dataset.py
-3. Training dataset
-   Running training_dataset.py
-4. Deploy model to testing program
-   a. make test folder and fill with audio file for testing
-   b. running testing.py
-   
+
+# audio-classification 
+
+audio classification tutorial, make model and deploy model to audio classification program.
+
+
+
+## Installation 
+- Clone Repository
+```bash
+  git clone https://github.com/Yumnasilvia/audio-classification.git
+```
+- Install Tensorflow
+- Install Numpy
+- Install Matplotlib
+- Install Scikit-learn
+- Install Librosa
+
+## Create Dataset
+- Make dataset folder 
+```bash
+  cd audio-classification
+  mkdir dataset
+  cd dataset
+  mkdir 'class_name1'
+  mkdir 'class_name2'
+  mkdir 'class_name3'
+```
+- Fill class folder with audio file
+```bash
+  cd 'class_name1' 
+  - audio_file.mov
+  cd 'class_name2'
+  - audio_file.mov
+  cd 'class_name3'
+  - audio_file.mov
+```
+- Prepare dataset
+```bash
+  cd audio-classification
+  python prepare_dataset.py
+```
+## Training Dataset
+```bash
+  cd audio-classification
+  python training_dataset.py
+```
+![App Screenshot](Figure_1.png)
+## Deploy Model to Testing Program
+- Make test folder
+```bash
+  cd audio-classification
+  mkdir test
+  - audio_test1.mov
+  - audio_test2.mov
+```
+- Run testing program
+```bash
+  cd audio-classification
+  python testing.py
+```
+## Authors
+
+- [@Yumnasilvia](https://www.github.com/Yumnasilvia)
+
