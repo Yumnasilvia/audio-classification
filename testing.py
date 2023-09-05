@@ -99,3 +99,4 @@ if __name__ == "__main__":
     #keyword2 = kss.predict("test/lanjutkan.wav")
     #print(f"PREDICT KEYWORDS: {keyword1},{keyword2}")
     print(f"PREDICT KEYWORDS: {keyword1}")
+    print(f"PROGRAM BERHASIL")
